@@ -32,7 +32,7 @@ body{
     width: 100%;    
 }
 
-.input-container .searchBtn{
+.input-container #searchBtn{
     font-size: 1em;
     background: #3d64e6;
     color: #fff;
@@ -88,3 +88,12 @@ input{
     text-align: center;
     margin-top: 25px;
 }
+
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    /* background-color: #f0f0f0; */
+    /* border: 1px solid #ccc; */
+}
+

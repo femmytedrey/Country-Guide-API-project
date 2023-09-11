@@ -1,13 +1,11 @@
-// console.log("javascript is intact");
 let searchBtn = document.querySelector(".searchBtn");
 let inputField = document.getElementById("inputField");
-const loadingElement = document.getElementById("loading");
-
 
 searchBtn.addEventListener('click', () => {
     if(inputField.value === ""){
         alert("Input field cannot be empty");
     }
+    
 
     let countryName = inputField.value;
     let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
@@ -62,8 +60,10 @@ searchBtn.addEventListener('click', () => {
         </div>
         
         `
+
+        inputField.value = "";
     })
     .catch(() =>{
-        result.innerHTML = `<h3 class = "error">Couldn't find country!</h3>`;
+        result.innerHTML = `<h3 class = "error">Couldn't find country</h3>`;
     });
 })
