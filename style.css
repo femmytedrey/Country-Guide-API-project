@@ -27,7 +27,8 @@ body{
 
 .input-container{
     display: flex;
-    width: 100%;    
+    width: 100%;
+    justify-content: space-between;  
 }
 
 .input-container #searchBtn{
@@ -49,7 +50,7 @@ input{
     font-size: 16px;
     padding: 0 0.62em;
     color: #222a43;
-    flex: 1;
+    width: 75%;
     margin-right: 25px;
 }
 
@@ -95,3 +96,16 @@ input{
     /* border: 1px solid #ccc; */
 }
 
+/* @media screen and (max-width: 600px){
+    .input-container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    input{
+        width: 100%;
+    }
+    .input-container #searchBtn{
+        margin-top: 20px;
+    }
+} */
